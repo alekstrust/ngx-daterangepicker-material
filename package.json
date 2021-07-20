@@ -1,6 +1,6 @@
 {
-  "name": "ngx-daterangepicker-material",
-  "version": "5.0.1",
+  "name": "ngx-daterangepicker-material-patched",
+  "version": "5.0.2",
   "description": "Angular 9 and 10 date range picker (with material design theme)",
   "keywords": [
     "angular2",
@@ -21,7 +21,7 @@
     "dayjs",
     "picker"
   ],
-  "homepage": "https://github.com/fetrarij/ngx-daterangepicker-material",
+  "homepage": "https://github.com/alekstrust/ngx-daterangepicker-material",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -37,13 +37,12 @@
     "build": "ng-packagr -p package.json",
     "build:schematics": "tsc -p ./tsconfig.schematics.json",
     "copy:schematics": "cpr schematics/dist dist/schematics && cp ./schematics/collection.json ./dist/schematics && cp ./schematics/ng-add/schema.json ./dist/schematics/ng-add",
-    "postbuild": "npm run build:schematics && npm run copy:schematics",
-    "prepare": "npm run build && npm run postbuild"
+    "postbuild": "npm run build:schematics && npm run copy:schematics"
   },
   "author": "Fetrarijaona R.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fetrarij/ngx-daterangepicker-material.git"
+    "url": "https://github.com/alekstrust/ngx-daterangepicker-material.git"
   },
   "peerDependencies": {
     "dayjs": "^1.10.4"
@@ -78,7 +77,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.5.0",
     "materialize-css": "^1.0.0",
-    "ng-packagr": "^11.1.4",
+    "ng-packagr": "^11.2.4",
     "protractor": "~7.0.0",
     "rimraf": "^2.6.1",
     "rxjs": "^6.3.3",
