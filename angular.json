@@ -126,7 +126,7 @@
       }
     }
   },
-  "defaultProject": "ngx-daterangepicker-material",
+  "defaultProject": "ngx-daterangepicker-material-patched",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "",
